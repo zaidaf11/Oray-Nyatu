@@ -1,0 +1,89 @@
+body {
+    background-color: #f0f0f0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+canvas {
+    background-color: #fff;
+    border: 2px solid #333;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.score-container {
+    margin-top: 20px;
+    font-size: 1.5em;
+    color: #555;
+}
+
+/* Membuat garis pada kanvas */
+#gameCanvas {
+    background-image:
+        linear-gradient(0deg, transparent 95%, rgba(0, 0, 0, 0.1) 95%),
+        linear-gradient(90deg, transparent 95%, rgba(0, 0, 0, 0.1) 95%);
+    background-size: 20px 20px;
+}
+
+/* Gaya untuk dialog box */
+.dialog {
+    display: none; /* Sembunyikan secara default */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.dialog-content {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.dialog-content h2 {
+    margin-top: 0;
+}
+
+.dialog-content button {
+    padding: 10px 20px;
+    margin: 0 10px;
+    font-size: 1em;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+#restartYes {
+    background-color: #4CAF50;
+    color: white;
+}
+
+#restartYes:hover {
+    background-color: #45a049;
+}
+
+#restartNo {
+    background-color: #f44336;
+    color: white;
+}
+
+#restartNo:hover {
+    background-color: #da190b;
+}

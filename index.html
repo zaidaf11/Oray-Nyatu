@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Permainan Ular</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Permainan Ular</h1>
+    <canvas id="gameCanvas" width="400" height="400"></canvas>
+    <div class="score-container">
+        <p>Skor: <span id="score">0</span></p>
+    </div>
+
+    <div id="gameOverDialog" class="dialog">
+        <div class="dialog-content">
+            <h2>Permainan Selesai!</h2>
+            <p>Skor Anda: <span id="finalScore">0</span></p>
+            <p>Main lagi?</p>
+            <button id="restartYes">Ya</button>
+            <button id="restartNo">Tidak</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
