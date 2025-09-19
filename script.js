@@ -48,12 +48,12 @@ function drawSnake() {
     snake.forEach((segment, index) => {
         if (index === 0) {
             // Gambar kepala ular
-            ctx.fillStyle = '#000000'; // Warna hitam
-            ctx.strokeStyle = '#222222'; // Garis tepi abu gelap
+            ctx.fillStyle = '#0c00adff'; // Warna hitam
+            ctx.strokeStyle = '#02007cff'; // Garis tepi abu gelap
         } else {
             // Gambar badan ular
-            ctx.fillStyle = '#444444'; // Warna abu gelap
-            ctx.strokeStyle = '#222222'; // Garis tepi abu gelap
+            ctx.fillStyle = '#999999ff'; // Warna abu gelap
+            ctx.strokeStyle = '#656565ff'; // Garis tepi abu gelap
         }
         ctx.fillRect(segment.x * gridSize, segment.y * gridSize, gridSize, gridSize);
         ctx.strokeRect(segment.x * gridSize, segment.y * gridSize, gridSize, gridSize);
@@ -61,9 +61,9 @@ function drawSnake() {
 }
 
 function drawFood() {
-    ctx.fillStyle = 'red';
+    ctx.fillStyle = 'orange';
     ctx.fillRect(food.x * gridSize, food.y * gridSize, gridSize, gridSize);
-    ctx.strokeStyle = 'darkred';
+    ctx.strokeStyle = 'darkorange';
     ctx.strokeRect(food.x * gridSize, food.y * gridSize, gridSize, gridSize);
 }
 
@@ -142,3 +142,4 @@ restartNoButton.addEventListener('click', () => {
 });
 
 initGame();
+
